@@ -27,11 +27,32 @@ public class Diseño extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        resultado1 = new javax.swing.JLabel();
+        resultado3 = new javax.swing.JLabel();
+        resultado4 = new javax.swing.JLabel();
         SumaMatrices = new javax.swing.JButton();
         RestaMatrices = new javax.swing.JButton();
         MultiplicacionMatrices = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         Resultado = new javax.swing.JButton();
+        resultado = new javax.swing.JLabel();
+        resultado2 = new javax.swing.JLabel();
+        resultado5 = new javax.swing.JLabel();
+
+        resultado1.setBackground(new java.awt.Color(255, 255, 255));
+        resultado1.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        resultado1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        resultado1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        resultado3.setBackground(new java.awt.Color(255, 255, 255));
+        resultado3.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        resultado3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        resultado3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        resultado4.setBackground(new java.awt.Color(255, 255, 255));
+        resultado4.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        resultado4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        resultado4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         SumaMatrices.setText("Suma");
         SumaMatrices.addActionListener(new java.awt.event.ActionListener() {
@@ -49,7 +70,7 @@ public class Diseño extends javax.swing.JPanel {
 
         MultiplicacionMatrices.setText("Multiplicacion");
 
-        jButton4.setText("AXB^-1");
+        jButton4.setText("AXB^(-1)");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -58,6 +79,21 @@ public class Diseño extends javax.swing.JPanel {
 
         Resultado.setText("=");
 
+        resultado.setBackground(new java.awt.Color(255, 255, 255));
+        resultado.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        resultado.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        resultado.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        resultado2.setBackground(new java.awt.Color(255, 255, 255));
+        resultado2.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        resultado2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        resultado2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        resultado5.setBackground(new java.awt.Color(255, 255, 255));
+        resultado5.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        resultado5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        resultado5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -65,18 +101,32 @@ public class Diseño extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGap(44, 44, 44)
                         .addComponent(SumaMatrices)
-                        .addGap(18, 18, 18)
+                        .addGap(31, 31, 31)
                         .addComponent(RestaMatrices)
-                        .addGap(18, 18, 18)
+                        .addGap(44, 44, 44)
                         .addComponent(MultiplicacionMatrices)
-                        .addGap(18, 18, 18)
+                        .addGap(54, 54, 54)
                         .addComponent(jButton4))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(154, 154, 154)
+                        .addGap(227, 227, 227)
                         .addComponent(Resultado)))
-                .addContainerGap(52, Short.MAX_VALUE))
+                .addContainerGap(56, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(143, 143, 143))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(38, 38, 38)
+                    .addComponent(resultado2, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(268, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(282, Short.MAX_VALUE)
+                    .addComponent(resultado5, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(24, 24, 24)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -87,9 +137,21 @@ public class Diseño extends javax.swing.JPanel {
                     .addComponent(RestaMatrices)
                     .addComponent(MultiplicacionMatrices)
                     .addComponent(jButton4))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Resultado)
-                .addContainerGap(116, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(36, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(21, 21, 21)
+                    .addComponent(resultado2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(198, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(33, 33, 33)
+                    .addComponent(resultado5, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(186, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -112,5 +174,11 @@ public class Diseño extends javax.swing.JPanel {
     private javax.swing.JButton Resultado;
     private javax.swing.JButton SumaMatrices;
     private javax.swing.JButton jButton4;
+    private javax.swing.JLabel resultado;
+    private javax.swing.JLabel resultado1;
+    private javax.swing.JLabel resultado2;
+    private javax.swing.JLabel resultado3;
+    private javax.swing.JLabel resultado4;
+    private javax.swing.JLabel resultado5;
     // End of variables declaration//GEN-END:variables
 }
